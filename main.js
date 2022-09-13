@@ -50,14 +50,30 @@
 Которая может считать длину переданной как аргумент строки 
 и вывести в консоль длину */
 
- function countChar(argumentCount){
-     let value = 0;
-     for(let i = 1; i <= argumentCount; i++){
-         value = i;
-    }
-    console.log(value);    
- }
- const arg = prompt("Input argument").replaceAll(' ','');
- countChar(arg.length);
+//  function countChar(argumentCount){
+//      let value = 0;
+//      for(let i = 1; i <= argumentCount; i++){
+//          value = i;
+//     }
+//     console.log(value);    
+//  }
+//  const arg = prompt("Input argument").replaceAll(' ','');
+//  countChar(arg.length);
 
  /* ============== End third task ====================== */
+
+ /* Begin additional task: Создайте функцию с переменным числом 
+ аргументов которая высчитывает среднее арифметическое по ним.  */
+
+let array = [5,5,6,8,6,4,10];
+     let count = 0;
+     let arithmeticMean = 0;
+array.forEach(function callback(currentValue, index) {
+    count += currentValue;
+    index++;
+    arithmeticMean = count / index;
+});
+console.log(arithmeticMean);
+
+
+ /* ============== End additional task ====================== */
